@@ -1,0 +1,1911 @@
+{
+  "created_utc": "2026-11-09T09:57:49.590904+00:00",
+  "split": "test",
+  "dataset_id": "6efba9d4fe83c421ec2a55ae309a2d02c054b8984e8543958010cc6e438d1b51",
+  "dataset_seed": 8675309,
+  "excluded_dataset_id": "5978ef2c6361e921308248d5abe6070b1a53e63b99ea7887fa6ed6c2d96d3c13",
+  "model": {
+    "model_id": "3059b03c520bb49f713f33915815101fcb8f0898cb29c08a6d6f814aabbc107f",
+    "grid_size": 16,
+    "inputs": 256,
+    "hidden_neurons": 9056,
+    "template_neurons": 7007,
+    "intensity_neurons": 2048,
+    "intensity_pool_neurons": 1,
+    "class_outputs": 5,
+    "weights": 1804895,
+    "detector_weights": 1800799,
+    "biases": 9056,
+    "weight_count_note": "Logical connections, including zero detector weights and repeated shared intensity weights; max pooling has no weights.",
+    "trainable_parameters": 0,
+    "templates_per_class": {
+      "cross": 1113,
+      "square": 742,
+      "circle": 742,
+      "horizontal": 2205,
+      "vertical": 2205
+    },
+    "min_score": 0.55,
+    "min_margin": 0.08
+  },
+  "samples": 1500,
+  "correct": 1407,
+  "accuracy": 0.938,
+  "known_shape_accuracy": 0.9483333333333334,
+  "unknown_recall": 0.8966666666666666,
+  "known_rejection_rate": 0.051666666666666666,
+  "coverage": 0.7793333333333333,
+  "accuracy_when_accepted": 0.9734816082121471,
+  "inference_seconds": 0.028071082895621657,
+  "labels": [
+    "cross",
+    "square",
+    "circle",
+    "horizontal",
+    "vertical",
+    "unknown"
+  ],
+  "confusion_matrix": [
+    [
+      238,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      217,
+      0,
+      0,
+      0,
+      23
+    ],
+    [
+      0,
+      0,
+      226,
+      0,
+      0,
+      14
+    ],
+    [
+      0,
+      0,
+      0,
+      229,
+      0,
+      11
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      228,
+      12
+    ],
+    [
+      29,
+      0,
+      0,
+      2,
+      0,
+      269
+    ]
+  ],
+  "by_class": {
+    "circle": {
+      "count": 240,
+      "correct": 226,
+      "accuracy": 0.9416666666666667
+    },
+    "cross": {
+      "count": 240,
+      "correct": 238,
+      "accuracy": 0.9916666666666667
+    },
+    "horizontal": {
+      "count": 240,
+      "correct": 229,
+      "accuracy": 0.9541666666666667
+    },
+    "square": {
+      "count": 240,
+      "correct": 217,
+      "accuracy": 0.9041666666666667
+    },
+    "unknown": {
+      "count": 300,
+      "correct": 269,
+      "accuracy": 0.8966666666666666
+    },
+    "vertical": {
+      "count": 240,
+      "correct": 228,
+      "accuracy": 0.95
+    }
+  },
+  "by_profile": {
+    "blob": {
+      "count": 60,
+      "correct": 31,
+      "accuracy": 0.5166666666666667
+    },
+    "clean": {
+      "count": 300,
+      "correct": 292,
+      "accuracy": 0.9733333333333334
+    },
+    "diagonal": {
+      "count": 60,
+      "correct": 60,
+      "accuracy": 1.0
+    },
+    "gaps": {
+      "count": 300,
+      "correct": 290,
+      "accuracy": 0.9666666666666667
+    },
+    "noise": {
+      "count": 300,
+      "correct": 271,
+      "accuracy": 0.9033333333333333
+    },
+    "scribble": {
+      "count": 60,
+      "correct": 58,
+      "accuracy": 0.9666666666666667
+    },
+    "speckle": {
+      "count": 60,
+      "correct": 60,
+      "accuracy": 1.0
+    },
+    "thick": {
+      "count": 300,
+      "correct": 285,
+      "accuracy": 0.95
+    },
+    "triangle": {
+      "count": 60,
+      "correct": 60,
+      "accuracy": 1.0
+    }
+  },
+  "failures": [
+    {
+      "file": "images/00131_cross.png",
+      "label": "cross",
+      "profile": "noise",
+      "sha256": "8958df115f4028de67c1c78aeb2b8c64db338e48fdffcea1be22128462c82a97",
+      "parameters": {
+        "size": 9.893826850347365,
+        "stroke": 0.9083750509713043,
+        "left": 2.7123424063159915,
+        "top": 3.220037517569747
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.5424802899360657,
+        "square": 0.19372239708900452,
+        "circle": 0.12987716495990753,
+        "horizontal": 0.25061824917793274,
+        "vertical": 0.2649992108345032
+      }
+    },
+    {
+      "file": "images/00168_cross.png",
+      "label": "cross",
+      "profile": "noise",
+      "sha256": "49fa240960a452d253f2aa89df47e43f2770a65679755160bf9ccd76bed48d82",
+      "parameters": {
+        "size": 7.323178453392282,
+        "stroke": 1.5431148109310455,
+        "left": 2.9528167681541477,
+        "top": 7.874645120415912
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.5355699062347412,
+        "square": 0.20179487764835358,
+        "circle": 0.2177591472864151,
+        "horizontal": 0.25587716698646545,
+        "vertical": 0.34285134077072144
+      }
+    },
+    {
+      "file": "images/00245_square.png",
+      "label": "square",
+      "profile": "clean",
+      "sha256": "ccf51ca11f0468e36fdf3ae16748b08c1f8e6537583fc52e18bf97fb859a52c2",
+      "parameters": {
+        "size": 7.638305137479188,
+        "stroke": 1.2115055051716785,
+        "left": 5.736665994012539,
+        "top": 1.3046621460833148
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2570580542087555,
+        "square": 0.7606971263885498,
+        "circle": 0.7394582629203796,
+        "horizontal": 0.08176295459270477,
+        "vertical": 0.024246441200375557
+      }
+    },
+    {
+      "file": "images/00248_square.png",
+      "label": "square",
+      "profile": "clean",
+      "sha256": "f58a5a0276c130d5c3cfbd370bb87417a22b287b86604aa99742b2ee61a463b6",
+      "parameters": {
+        "size": 9.785382076828633,
+        "stroke": 1.394154926256287,
+        "left": 2.456368381846342,
+        "top": 3.4660122933125295
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.0,
+        "square": 0.7802656888961792,
+        "circle": 0.701675534248352,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00260_square.png",
+      "label": "square",
+      "profile": "clean",
+      "sha256": "279e3dcef94bca6ddbcf01541fa5e5913744a120bb5fdd47c96f321b73c70745",
+      "parameters": {
+        "size": 7.3935148879046135,
+        "stroke": 1.1958023560968032,
+        "left": 7.811574398625922,
+        "top": 7.116365900238891
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2849380075931549,
+        "square": 0.8146292567253113,
+        "circle": 0.7563296556472778,
+        "horizontal": 0.12048359215259552,
+        "vertical": 0.043714214116334915
+      }
+    },
+    {
+      "file": "images/00262_square.png",
+      "label": "square",
+      "profile": "clean",
+      "sha256": "8097a59cddf0af5ce48de98ed5d0e46c7520d332ac0c787fdfde36752eeb5f2a",
+      "parameters": {
+        "size": 7.456445104591126,
+        "stroke": 1.0695137810428874,
+        "left": 4.552523375476352,
+        "top": 3.629511972827943
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2608107626438141,
+        "square": 0.8022618889808655,
+        "circle": 0.7450172901153564,
+        "horizontal": 0.09264242649078369,
+        "vertical": 0.1187862753868103
+      }
+    },
+    {
+      "file": "images/00266_square.png",
+      "label": "square",
+      "profile": "clean",
+      "sha256": "81a86f75cb123cc3b406b0047d6cb01c48e8e989c0610c4a411a77ca3fdf7e3d",
+      "parameters": {
+        "size": 7.857755276121448,
+        "stroke": 1.3526598460580785,
+        "left": 1.239565710597981,
+        "top": 4.533644704995665
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.24790054559707642,
+        "square": 0.7789062261581421,
+        "circle": 0.7744871973991394,
+        "horizontal": 0.009268386289477348,
+        "vertical": 0.07027040421962738
+      }
+    },
+    {
+      "file": "images/00279_square.png",
+      "label": "square",
+      "profile": "clean",
+      "sha256": "8d3e90519dc84d55ed31816e195a55192324dde939df17c4c46ef54c427be94e",
+      "parameters": {
+        "size": 7.714490788774625,
+        "stroke": 1.4079079117675923,
+        "left": 4.4117068293935455,
+        "top": 3.5043746571612955
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2580552101135254,
+        "square": 0.8029128909111023,
+        "circle": 0.7877023816108704,
+        "horizontal": 0.026384394615888596,
+        "vertical": 0.060661833733320236
+      }
+    },
+    {
+      "file": "images/00286_square.png",
+      "label": "square",
+      "profile": "clean",
+      "sha256": "c0abffdd28c231a2b59c54b80b19d1452972d5f01db1f91593aee59adc38d1b8",
+      "parameters": {
+        "size": 8.03517620832742,
+        "stroke": 1.3652536646625166,
+        "left": 0.4389143650233546,
+        "top": 0.32199384286480265
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.23302774131298065,
+        "square": 0.844266951084137,
+        "circle": 0.7973380088806152,
+        "horizontal": 0.055791646242141724,
+        "vertical": 0.014833005145192146
+      }
+    },
+    {
+      "file": "images/00298_square.png",
+      "label": "square",
+      "profile": "clean",
+      "sha256": "a4a34b00782c6395f874f891ef8ed5de9b3d48f777a8ebe3f786e616a43bcf38",
+      "parameters": {
+        "size": 8.516896960104129,
+        "stroke": 0.9408634241161166,
+        "left": 1.7609466441188415,
+        "top": 6.142015300429537
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.18075443804264069,
+        "square": 0.7126576900482178,
+        "circle": 0.6564724445343018,
+        "horizontal": 0.1412256807088852,
+        "vertical": 0.07732392847537994
+      }
+    },
+    {
+      "file": "images/00305_square.png",
+      "label": "square",
+      "profile": "thick",
+      "sha256": "2c96af3c0b62893b0e3da943ff54ed55d15b0a71900c7436ef55ab403c81a045",
+      "parameters": {
+        "size": 8.833047675639971,
+        "stroke": 2.015791350504869,
+        "left": 0.5731582814061029,
+        "top": 6.511193609806557
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2542731463909149,
+        "square": 0.8147004246711731,
+        "circle": 0.8018929362297058,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00306_square.png",
+      "label": "square",
+      "profile": "thick",
+      "sha256": "32e84d6c0811c17fef53a44580340f79f7ac1ac7af4c42cf4bd354beb9f78372",
+      "parameters": {
+        "size": 9.229359057971381,
+        "stroke": 2.3525251003897014,
+        "left": 2.2293142390709866,
+        "top": 1.3844043263978965
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.1822817474603653,
+        "square": 0.7799198031425476,
+        "circle": 0.7458321452140808,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00326_square.png",
+      "label": "square",
+      "profile": "thick",
+      "sha256": "9a9006795b422a133504b773ea81d7b9897986eb5ddf86f23d33845e187cda84",
+      "parameters": {
+        "size": 7.33703320210033,
+        "stroke": 1.91247098199979,
+        "left": 1.4033653123669059,
+        "top": 6.402729632642009
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.3143194317817688,
+        "square": 0.9052207469940186,
+        "circle": 0.8637167811393738,
+        "horizontal": 0.051945365965366364,
+        "vertical": 0.04900447279214859
+      }
+    },
+    {
+      "file": "images/00330_square.png",
+      "label": "square",
+      "profile": "thick",
+      "sha256": "4dd6cdea3fb2f3c1d826977b122f368a16ed971254ea665886892bda8cbb8caf",
+      "parameters": {
+        "size": 10.121644438714947,
+        "stroke": 2.0318941679978004,
+        "left": 4.312665453317023,
+        "top": 2.3496760757020256
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.0,
+        "square": 0.8328796625137329,
+        "circle": 0.7690978050231934,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00374_square.png",
+      "label": "square",
+      "profile": "noise",
+      "sha256": "a58c98e67146f7f3462c68906e8bb8ed5a14d0562af859da70c3b5f89cef1c47",
+      "parameters": {
+        "size": 7.885893024305312,
+        "stroke": 1.4314959268191905,
+        "left": 6.499390948741895,
+        "top": 6.737586357811994
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2403925359249115,
+        "square": 0.7183407545089722,
+        "circle": 0.7114413976669312,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00396_square.png",
+      "label": "square",
+      "profile": "noise",
+      "sha256": "63bd40c67dc45083f1b236227c161e76aadf04488c86139f7069f6389eacf94c",
+      "parameters": {
+        "size": 7.348799071896102,
+        "stroke": 1.1698086433378891,
+        "left": 1.8435122460835303,
+        "top": 0.41797328392942495
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.21185004711151123,
+        "square": 0.6939134001731873,
+        "circle": 0.6367154121398926,
+        "horizontal": 0.0931735560297966,
+        "vertical": 0.03684641048312187
+      }
+    },
+    {
+      "file": "images/00424_square.png",
+      "label": "square",
+      "profile": "gaps",
+      "sha256": "2f4da6149675bea970f045c6fd41b87d4416fc48315c9c730a85b3c328aa7dae",
+      "parameters": {
+        "size": 7.913018722437562,
+        "stroke": 1.3073520304458748,
+        "left": 2.2899926928958054,
+        "top": 7.273154514488703
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2660290002822876,
+        "square": 0.7113382816314697,
+        "circle": 0.6382688879966736,
+        "horizontal": 0.12792745232582092,
+        "vertical": 0.10875537246465683
+      }
+    },
+    {
+      "file": "images/00435_square.png",
+      "label": "square",
+      "profile": "gaps",
+      "sha256": "e5d552908f4811d9a99c30f88b5fdee806037057fabafc012a9418bc2f95c8f7",
+      "parameters": {
+        "size": 7.5801934362230305,
+        "stroke": 0.9451815535288218,
+        "left": 1.6039887580973575,
+        "top": 4.739610122622614
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2335890531539917,
+        "square": 0.75,
+        "circle": 0.7164649963378906,
+        "horizontal": 0.16151054203510284,
+        "vertical": 0.17342038452625275
+      }
+    },
+    {
+      "file": "images/00438_square.png",
+      "label": "square",
+      "profile": "gaps",
+      "sha256": "88469420efe617202d34f9b25a8bee1257174c899aaa10dcd5ec0e32a6d81e8e",
+      "parameters": {
+        "size": 7.025122819930367,
+        "stroke": 1.0817483237191043,
+        "left": 7.670512812956793,
+        "top": 0.4205057305061845
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2853047847747803,
+        "square": 0.7770348191261292,
+        "circle": 0.7023025751113892,
+        "horizontal": 0.21877552568912506,
+        "vertical": 0.206683948636055
+      }
+    },
+    {
+      "file": "images/00451_square.png",
+      "label": "square",
+      "profile": "gaps",
+      "sha256": "ef3dc9e3fde3e80bbd015d676fb2d6e581e0d60090273de61d5fd920e8a674f9",
+      "parameters": {
+        "size": 7.142432626370443,
+        "stroke": 1.28232516956661,
+        "left": 5.375589935433078,
+        "top": 4.9202630522071615
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.3053143322467804,
+        "square": 0.7275227308273315,
+        "circle": 0.6908037066459656,
+        "horizontal": 0.14850887656211853,
+        "vertical": 0.13694614171981812
+      }
+    },
+    {
+      "file": "images/00454_square.png",
+      "label": "square",
+      "profile": "gaps",
+      "sha256": "bf822c1b4ca28c50836975f42f829a80490cbba9582db21501116e2c2d1d3677",
+      "parameters": {
+        "size": 7.984083535585945,
+        "stroke": 1.2319594337940245,
+        "left": 5.564229065592017,
+        "top": 0.7766547247838308
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.20989081263542175,
+        "square": 0.7565149664878845,
+        "circle": 0.7072160840034485,
+        "horizontal": 0.10182003676891327,
+        "vertical": 0.1273827999830246
+      }
+    },
+    {
+      "file": "images/00456_square.png",
+      "label": "square",
+      "profile": "gaps",
+      "sha256": "3c4d9d52f4ba577140145141a12c491b21cc2e67f278465655c8d0bb244a61ec",
+      "parameters": {
+        "size": 8.021656565662665,
+        "stroke": 1.2379300538630729,
+        "left": 5.611309166593107,
+        "top": 0.3222701455030685
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.19797520339488983,
+        "square": 0.7740463614463806,
+        "circle": 0.7036991715431213,
+        "horizontal": 0.1442810446023941,
+        "vertical": 0.12075164169073105
+      }
+    },
+    {
+      "file": "images/00459_square.png",
+      "label": "square",
+      "profile": "gaps",
+      "sha256": "63cbb17819d5183c255a2caea0d1d7d9da944050f3a5fad4bef8b07ac255676a",
+      "parameters": {
+        "size": 8.455552081589557,
+        "stroke": 1.405060836437249,
+        "left": 6.844537685655938,
+        "top": 1.9765157685050134
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.17715422809123993,
+        "square": 0.7550461292266846,
+        "circle": 0.6755391359329224,
+        "horizontal": 0.11804301291704178,
+        "vertical": 0.04327202960848808
+      }
+    },
+    {
+      "file": "images/00467_square.png",
+      "label": "square",
+      "profile": "gaps",
+      "sha256": "90c3af33eeb762db3ebece7085df2775c0b7b4cc89ec5fa59fea10c6240475c6",
+      "parameters": {
+        "size": 7.227425144310569,
+        "stroke": 0.9458700691671811,
+        "left": 6.155609989759493,
+        "top": 7.135998814281603
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.3083283007144928,
+        "square": 0.7408395409584045,
+        "circle": 0.6623443961143494,
+        "horizontal": 0.2548917531967163,
+        "vertical": 0.25293099880218506
+      }
+    },
+    {
+      "file": "images/00474_square.png",
+      "label": "square",
+      "profile": "gaps",
+      "sha256": "34a3b0aeedcc81ea3b49a37332457f688a6f4e9cdefba8f4c1463c313419906b",
+      "parameters": {
+        "size": 7.137540733521437,
+        "stroke": 1.1391441911322382,
+        "left": 8.529541260502416,
+        "top": 2.4841145745302304
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.32623031735420227,
+        "square": 0.7827305793762207,
+        "circle": 0.7103821635246277,
+        "horizontal": 0.21578845381736755,
+        "vertical": 0.18310865759849548
+      }
+    },
+    {
+      "file": "images/00544_circle.png",
+      "label": "circle",
+      "profile": "thick",
+      "sha256": "b830f5320caeadbeb18f98203d28415f4caaf952e1d5e66831369faa653a1e66",
+      "parameters": {
+        "size": 8.017620706378034,
+        "stroke": 2.3991987348752115,
+        "left": 0.5999527922838523,
+        "top": 0.3522318781183084
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.5264353156089783,
+        "square": 0.8467491865158081,
+        "circle": 0.8166135549545288,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00545_circle.png",
+      "label": "circle",
+      "profile": "thick",
+      "sha256": "0c3201e1bc9acf4f5c4623a4b3bac015ae2d8faba39784ebc5e89160885956d0",
+      "parameters": {
+        "size": 11.33544378088726,
+        "stroke": 2.4346624967709602,
+        "left": 3.472949383652724,
+        "top": 3.346798071042087
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.04582750052213669,
+        "square": 0.7615330219268799,
+        "circle": 0.7855228781700134,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00556_circle.png",
+      "label": "circle",
+      "profile": "thick",
+      "sha256": "40f435ad7688a10244ee5fb7182634d178e2024f558beae44426973d583e000c",
+      "parameters": {
+        "size": 9.001160254458746,
+        "stroke": 2.432119089422152,
+        "left": 5.917697117530815,
+        "top": 6.54627834900554
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.3494928479194641,
+        "square": 0.7842445969581604,
+        "circle": 0.8257807493209839,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00558_circle.png",
+      "label": "circle",
+      "profile": "thick",
+      "sha256": "f2e969b64c613f1811daba61a9879b4ebbcf2ec2821240a58b415d8071c62022",
+      "parameters": {
+        "size": 10.529295961478372,
+        "stroke": 2.485407688340606,
+        "left": 0.5044900563683397,
+        "top": 3.305503274278057
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.14291737973690033,
+        "square": 0.7491573691368103,
+        "circle": 0.821776807308197,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00560_circle.png",
+      "label": "circle",
+      "profile": "thick",
+      "sha256": "9b5e0b2d068b0ef349725a00ff964bca145efb2a261f4abc8bdc82794e274b98",
+      "parameters": {
+        "size": 8.066157655193308,
+        "stroke": 2.181836925263702,
+        "left": 5.599605636588206,
+        "top": 0.4723144742732444
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.4744499623775482,
+        "square": 0.8488540649414062,
+        "circle": 0.8020097613334656,
+        "horizontal": 0.004857946652919054,
+        "vertical": 0.0038399517070502043
+      }
+    },
+    {
+      "file": "images/00561_circle.png",
+      "label": "circle",
+      "profile": "thick",
+      "sha256": "1cc7b36243b736fd1779766286b95aee9a15dbb97daca89727808fdca0704e40",
+      "parameters": {
+        "size": 8.203878697680958,
+        "stroke": 2.500079437144429,
+        "left": 6.618159428587611,
+        "top": 2.627270175159165
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.5129601955413818,
+        "square": 0.8002172112464905,
+        "circle": 0.8769348859786987,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00567_circle.png",
+      "label": "circle",
+      "profile": "thick",
+      "sha256": "363371e8d974efed906406467605447d65b436292a8dbecf8470c600f05c3a92",
+      "parameters": {
+        "size": 8.697924993272823,
+        "stroke": 2.0460781249533273,
+        "left": 6.426642273165905,
+        "top": 2.5740708705180704
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.30938178300857544,
+        "square": 0.809653103351593,
+        "circle": 0.8549241423606873,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00577_circle.png",
+      "label": "circle",
+      "profile": "thick",
+      "sha256": "9998cdc54ce389ae564afbe0e72e0c9468096ec804c73e527051c47785a73f83",
+      "parameters": {
+        "size": 11.037423792731962,
+        "stroke": 1.930298469615799,
+        "left": 4.4483636518461385,
+        "top": 1.6299978135047897
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.06275668740272522,
+        "square": 0.7453545331954956,
+        "circle": 0.8009012937545776,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00581_circle.png",
+      "label": "circle",
+      "profile": "thick",
+      "sha256": "8b7f5d93e1c402791a15599af05a23d0b339a06a39060bf7d027328534815916",
+      "parameters": {
+        "size": 9.298636986536028,
+        "stroke": 2.635856249636241,
+        "left": 2.7453786139795264,
+        "top": 5.454162785976453
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.35992881655693054,
+        "square": 0.7603654861450195,
+        "circle": 0.8365151882171631,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00591_circle.png",
+      "label": "circle",
+      "profile": "thick",
+      "sha256": "3125a55eaf300ad59a1af909d18a0301e9aa937cd63d6c724fbef239dff3e679",
+      "parameters": {
+        "size": 8.197179839487491,
+        "stroke": 2.2849081393196875,
+        "left": 1.0635636895885947,
+        "top": 7.3916637165092265
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.470272421836853,
+        "square": 0.8074876666069031,
+        "circle": 0.844974935054779,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00596_circle.png",
+      "label": "circle",
+      "profile": "thick",
+      "sha256": "8cf324113c354fb993f04b6ff002f4c17a5d13be20d7c78511b321ddc1ac7303",
+      "parameters": {
+        "size": 8.12927400079275,
+        "stroke": 2.3219880348295043,
+        "left": 5.736834881314101,
+        "top": 5.3801657949739985
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.5030232667922974,
+        "square": 0.8184499144554138,
+        "circle": 0.84940105676651,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00619_circle.png",
+      "label": "circle",
+      "profile": "noise",
+      "sha256": "71af745101958fd3fca5326f745ff16769e9aa51122f48321faf4eb7ec7329e6",
+      "parameters": {
+        "size": 7.298662673363715,
+        "stroke": 1.0995948145911765,
+        "left": 5.952781553649993,
+        "top": 1.9954640781340796
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2412605732679367,
+        "square": 0.5187836289405823,
+        "circle": 0.579109787940979,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00629_circle.png",
+      "label": "circle",
+      "profile": "noise",
+      "sha256": "c78ef671e7f93ea9edb3911e9ff9042f226e9aa2121a93062cfa86552b8b7cbe",
+      "parameters": {
+        "size": 8.286561721641508,
+        "stroke": 1.4993684753280703,
+        "left": 5.580428505663911,
+        "top": 6.795431447545677
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.24095861613750458,
+        "square": 0.6901143193244934,
+        "circle": 0.7437938451766968,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00651_circle.png",
+      "label": "circle",
+      "profile": "noise",
+      "sha256": "be608e2d0b57708d82edeb909e438333ce42fe2f7ed8311ee7eabb7f08214006",
+      "parameters": {
+        "size": 8.796797914267701,
+        "stroke": 1.5172940556046688,
+        "left": 4.540465116945617,
+        "top": 3.763142263049273
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.18204361200332642,
+        "square": 0.632886528968811,
+        "circle": 0.7060503363609314,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00840_horizontal.png",
+      "label": "horizontal",
+      "profile": "noise",
+      "sha256": "d08ae51125839304c755c83bb7b2d1b9a8dcc7bf24ff381f28c5abdc49f05397",
+      "parameters": {
+        "size": 10.07486008162817,
+        "stroke": 0.9531123417092907,
+        "left": 1.1444271747241481,
+        "top": 12.737018571502615
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.10294494032859802,
+        "square": 0.26277264952659607,
+        "circle": 0.1766829937696457,
+        "horizontal": 0.47417277097702026,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00841_horizontal.png",
+      "label": "horizontal",
+      "profile": "noise",
+      "sha256": "ae653e09def40a3dba59fd596694f1d3640b0e6dcbc49895d943772a49a56387",
+      "parameters": {
+        "size": 10.940398763958544,
+        "stroke": 1.213336277522681,
+        "left": 2.4966271875881074,
+        "top": 3.9538022594380453
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.26927998661994934,
+        "square": 0.20124074816703796,
+        "circle": 0.15626578032970428,
+        "horizontal": 0.5172080397605896,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00847_horizontal.png",
+      "label": "horizontal",
+      "profile": "noise",
+      "sha256": "df6bc788df6fb6fed03c5401aaeae1e8c59c76e763da0c6636309fa12d3d90b9",
+      "parameters": {
+        "size": 7.372011921891549,
+        "stroke": 1.0054829633770386,
+        "left": 7.700269853583351,
+        "top": 3.7071204039191383
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.30227744579315186,
+        "square": 0.20238971710205078,
+        "circle": 0.1432887762784958,
+        "horizontal": 0.5125875473022461,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00850_horizontal.png",
+      "label": "horizontal",
+      "profile": "noise",
+      "sha256": "4f85878ec99b680eec49b6fe7085b57a02afef14fbba6bde1ca4c9c5789c9583",
+      "parameters": {
+        "size": 9.022927244340092,
+        "stroke": 0.9114837001180373,
+        "left": 0.9967976712475267,
+        "top": 6.08385505307298
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.3498903214931488,
+        "square": 0.23974160850048065,
+        "circle": 0.20885424315929413,
+        "horizontal": 0.4841911196708679,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00851_horizontal.png",
+      "label": "horizontal",
+      "profile": "noise",
+      "sha256": "f61eefe16519bbf81090f28d3812f03581fae20cd3583637e106f37f483f583a",
+      "parameters": {
+        "size": 10.305607427284674,
+        "stroke": 1.1986623280151558,
+        "left": 0.8453362699822355,
+        "top": 13.72673491243131
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.028305165469646454,
+        "square": 0.1960967779159546,
+        "circle": 0.15691439807415009,
+        "horizontal": 0.5380760431289673,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00872_horizontal.png",
+      "label": "horizontal",
+      "profile": "noise",
+      "sha256": "365827143c8f1aea600e83b7d5ba01af339ffdd9eb95226fa1f94568043ecea5",
+      "parameters": {
+        "size": 8.407929176972834,
+        "stroke": 1.0488886013740462,
+        "left": 2.835964893656872,
+        "top": 7.6155021553731075
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.3551076650619507,
+        "square": 0.20583894848823547,
+        "circle": 0.19862014055252075,
+        "horizontal": 0.541060745716095,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00873_horizontal.png",
+      "label": "horizontal",
+      "profile": "noise",
+      "sha256": "fbabfd9fa23020abf9eeed85155455899f16df865787cd0d6171d9761159fecc",
+      "parameters": {
+        "size": 8.641321181145958,
+        "stroke": 0.9722275124351423,
+        "left": 2.7430954623675907,
+        "top": 1.7378372688958377
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.14409253001213074,
+        "square": 0.203851580619812,
+        "circle": 0.15880563855171204,
+        "horizontal": 0.5335783958435059,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00880_horizontal.png",
+      "label": "horizontal",
+      "profile": "noise",
+      "sha256": "c1c8039870ee967340f99eb01732b524ab2627c46529524d7167cb78f5bd83e4",
+      "parameters": {
+        "size": 7.0457907311552335,
+        "stroke": 1.2719779372253746,
+        "left": 2.5656664893068934,
+        "top": 11.066748443174768
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2902522683143616,
+        "square": 0.18719637393951416,
+        "circle": 0.1523062288761139,
+        "horizontal": 0.49371159076690674,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00889_horizontal.png",
+      "label": "horizontal",
+      "profile": "noise",
+      "sha256": "81209ee9662ffd4d7928c5515b6be7f34eb447eab7b2a3b85b9051aabaf03466",
+      "parameters": {
+        "size": 7.390947614736023,
+        "stroke": 1.2273255336157551,
+        "left": 6.108387025937539,
+        "top": 1.2043194802184038
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.08470369875431061,
+        "square": 0.22791974246501923,
+        "circle": 0.17402300238609314,
+        "horizontal": 0.5144071578979492,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00891_horizontal.png",
+      "label": "horizontal",
+      "profile": "noise",
+      "sha256": "11be353cfd0fcce78bc84b76ed7255c69ba6e69c1fd31ccac657a8dbcc9ad672",
+      "parameters": {
+        "size": 10.257963717493057,
+        "stroke": 1.141771084359347,
+        "left": 4.255257462449874,
+        "top": 12.283990545926178
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.18645644187927246,
+        "square": 0.24943073093891144,
+        "circle": 0.13711223006248474,
+        "horizontal": 0.5474209785461426,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/00897_horizontal.png",
+      "label": "horizontal",
+      "profile": "noise",
+      "sha256": "de5c67bb0ff945fb911d6d607268807e5d75c92d4c734fead3d82e2c39d1f39f",
+      "parameters": {
+        "size": 10.53823641162121,
+        "stroke": 0.9653209216326205,
+        "left": 4.175085331092116,
+        "top": 3.4593914808094945
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.29270434379577637,
+        "square": 0.18553751707077026,
+        "circle": 0.1838831752538681,
+        "horizontal": 0.49954888224601746,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01084_vertical.png",
+      "label": "vertical",
+      "profile": "noise",
+      "sha256": "dfff371363a4b4385394daba60da92516655ef72d8deb7a2925377c6ced128a6",
+      "parameters": {
+        "size": 12.057121091555658,
+        "stroke": 1.0040531840573155,
+        "left": 2.307836486220851,
+        "top": 2.271343206048785
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.15820060670375824,
+        "square": 0.21213795244693756,
+        "circle": 0.16145634651184082,
+        "horizontal": 0.0,
+        "vertical": 0.5150634050369263
+      }
+    },
+    {
+      "file": "images/01087_vertical.png",
+      "label": "vertical",
+      "profile": "noise",
+      "sha256": "c64f79378e2f2c560a8d0203c7201b5a194b7268c58a4c4bfdaaacaff8cc3515",
+      "parameters": {
+        "size": 10.853145433559245,
+        "stroke": 1.1110296181537955,
+        "left": 4.705111674171621,
+        "top": 2.4287527840464387
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.299724280834198,
+        "square": 0.25241702795028687,
+        "circle": 0.13390780985355377,
+        "horizontal": 0.0,
+        "vertical": 0.5421011447906494
+      }
+    },
+    {
+      "file": "images/01094_vertical.png",
+      "label": "vertical",
+      "profile": "noise",
+      "sha256": "e9eeec34d25399d4d1afb4fd0c160d4c5ce8ff61aa34042c709970e46260c64c",
+      "parameters": {
+        "size": 10.05707714374989,
+        "stroke": 0.9455913435880535,
+        "left": 2.821252299875256,
+        "top": 1.350364779241489
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2730555832386017,
+        "square": 0.19806985557079315,
+        "circle": 0.13715392351150513,
+        "horizontal": 0.0,
+        "vertical": 0.5098897814750671
+      }
+    },
+    {
+      "file": "images/01097_vertical.png",
+      "label": "vertical",
+      "profile": "noise",
+      "sha256": "23b26948bac499d802f74f23c6fc3ae5675c8675ee4fc15d3657a68fefc59374",
+      "parameters": {
+        "size": 10.243353267915214,
+        "stroke": 0.9202107950775609,
+        "left": 9.34086724714027,
+        "top": 1.5106094470426639
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2786867320537567,
+        "square": 0.21938377618789673,
+        "circle": 0.15493926405906677,
+        "horizontal": 0.0,
+        "vertical": 0.49614593386650085
+      }
+    },
+    {
+      "file": "images/01102_vertical.png",
+      "label": "vertical",
+      "profile": "noise",
+      "sha256": "89b63e87b64c014be3dae10c6d043bb25a7dbd885cde2e7957a84b9f8298daf4",
+      "parameters": {
+        "size": 9.096112949288905,
+        "stroke": 1.439854174333619,
+        "left": 12.583044325003588,
+        "top": 4.197952744136242
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.14678780734539032,
+        "square": 0.2757156789302826,
+        "circle": 0.1858150213956833,
+        "horizontal": 0.0,
+        "vertical": 0.5179125666618347
+      }
+    },
+    {
+      "file": "images/01103_vertical.png",
+      "label": "vertical",
+      "profile": "noise",
+      "sha256": "68884088113c1b00f266551137b695e48051ccf35c78857aae329d0cf392d561",
+      "parameters": {
+        "size": 11.073401744786125,
+        "stroke": 1.2368814731160918,
+        "left": 11.972557455094247,
+        "top": 2.8310063289066516
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.15724533796310425,
+        "square": 0.1935795545578003,
+        "circle": 0.09531654417514801,
+        "horizontal": 0.0,
+        "vertical": 0.546741247177124
+      }
+    },
+    {
+      "file": "images/01107_vertical.png",
+      "label": "vertical",
+      "profile": "noise",
+      "sha256": "79f0c01fca5605ae5497fec753dfe0d972976de8ba0f51a1135e309d2f4a8e44",
+      "parameters": {
+        "size": 8.165355926394767,
+        "stroke": 1.218341457033883,
+        "left": 12.191057245652726,
+        "top": 1.504579778784334
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.18496359884738922,
+        "square": 0.26333820819854736,
+        "circle": 0.19996684789657593,
+        "horizontal": 0.0,
+        "vertical": 0.4850696325302124
+      }
+    },
+    {
+      "file": "images/01117_vertical.png",
+      "label": "vertical",
+      "profile": "noise",
+      "sha256": "80a30e441f208df597d563cd9a9dbaf4c3f8c12332fb24b5a1fa8dd657b2bdbd",
+      "parameters": {
+        "size": 7.749612928587271,
+        "stroke": 0.9302976776830626,
+        "left": 5.772664716119407,
+        "top": 7.453920531052506
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2986315190792084,
+        "square": 0.2342677116394043,
+        "circle": 0.20710213482379913,
+        "horizontal": 0.07785945385694504,
+        "vertical": 0.5111825466156006
+      }
+    },
+    {
+      "file": "images/01125_vertical.png",
+      "label": "vertical",
+      "profile": "noise",
+      "sha256": "2c49e580a1f7d0565a3b4fe8f8c18baa340066f7a3af52ca430a220c397487fa",
+      "parameters": {
+        "size": 7.4666994788214085,
+        "stroke": 0.9415369648763707,
+        "left": 10.45775003182563,
+        "top": 5.450093963915635
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.2664216160774231,
+        "square": 0.19546571373939514,
+        "circle": 0.14152371883392334,
+        "horizontal": 0.024591514840722084,
+        "vertical": 0.45502448081970215
+      }
+    },
+    {
+      "file": "images/01128_vertical.png",
+      "label": "vertical",
+      "profile": "noise",
+      "sha256": "f8879d029563238023d8b440d56f4b337aee36d9e83616a31e07d67dac3ead55",
+      "parameters": {
+        "size": 8.644177703199425,
+        "stroke": 1.0090719848308376,
+        "left": 14.213419037333043,
+        "top": 1.9730811388671778
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.013924946077167988,
+        "square": 0.24518749117851257,
+        "circle": 0.1872759610414505,
+        "horizontal": 0.0,
+        "vertical": 0.5048134922981262
+      }
+    },
+    {
+      "file": "images/01130_vertical.png",
+      "label": "vertical",
+      "profile": "noise",
+      "sha256": "469d9e840db38daa61a234d9d4992aefe853a941edfd4a9f79eca02cbb540d6f",
+      "parameters": {
+        "size": 10.632823135872634,
+        "stroke": 1.0534584321093792,
+        "left": 13.165269187379543,
+        "top": 3.1126784537758243
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.002699814736843109,
+        "square": 0.1875842958688736,
+        "circle": 0.1096298024058342,
+        "horizontal": 0.0,
+        "vertical": 0.49923714995384216
+      }
+    },
+    {
+      "file": "images/01183_vertical.png",
+      "label": "vertical",
+      "profile": "gaps",
+      "sha256": "1c20f0065b4da9bdf23340982b4b13d959ed447d41873b61f9889abd7c883c2f",
+      "parameters": {
+        "size": 7.115724717003831,
+        "stroke": 1.541121845506104,
+        "left": 5.697419680060661,
+        "top": 4.0234650698037715
+      },
+      "predicted": "unknown",
+      "scores": {
+        "cross": 0.31799939274787903,
+        "square": 0.2153094857931137,
+        "circle": 0.18198633193969727,
+        "horizontal": 0.11170051991939545,
+        "vertical": 0.47734013199806213
+      }
+    },
+    {
+      "file": "images/01233_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "aa1fa9c9dd2c5d7375b73073b91146562b2a2cff0d68bca7d52a31a6443ef677",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.6049647927284241,
+        "square": 0.4884280264377594,
+        "circle": 0.47741129994392395,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01238_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "14ae6b94f4440a4c325ff3fa1b6bac94efe697ccf02547fd7f350a51957cc264",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.813513994216919,
+        "square": 0.5358547568321228,
+        "circle": 0.7325779795646667,
+        "horizontal": 0.2790388762950897,
+        "vertical": 0.27931249141693115
+      }
+    },
+    {
+      "file": "images/01243_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "0450c0044420844c69239847a340dc45ed94ca4759a380a39c725ca3f232d3f8",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.5786495804786682,
+        "square": 0.47418296337127686,
+        "circle": 0.47268158197402954,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01258_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "316cad7d64b99b97c70dc6ec3b5c1d9b5cdaf8b81730b824d45359393160075b",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.6578459143638611,
+        "square": 0.5667430758476257,
+        "circle": 0.5231847167015076,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01274_unknown.png",
+      "label": "unknown",
+      "profile": "scribble",
+      "sha256": "4097ece28422662693cc1a104814f016f7419aafbebf8ee653f3e57cb88926dc",
+      "parameters": {},
+      "predicted": "horizontal",
+      "scores": {
+        "cross": 0.507973849773407,
+        "square": 0.27852949500083923,
+        "circle": 0.2694949507713318,
+        "horizontal": 0.683369517326355,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01278_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "1c584ccd86cea31d6d9ec9ce44c86241563f18c9680f5894819cfb9f98671e01",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.6418465375900269,
+        "square": 0.5434495806694031,
+        "circle": 0.49577629566192627,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01283_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "bb95e7a595f78d9310fe431baf9a4aed0b4468c853ef87c6830af6e7f533a0bd",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.7828840017318726,
+        "square": 0.4688204526901245,
+        "circle": 0.6630873680114746,
+        "horizontal": 0.304896742105484,
+        "vertical": 0.30550283193588257
+      }
+    },
+    {
+      "file": "images/01323_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "a7192a874b1b2275cc7b119a594378a34466c3c11c529b8bd53217b4afba1dfa",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.718633770942688,
+        "square": 0.6016480326652527,
+        "circle": 0.6104049682617188,
+        "horizontal": 0.06170139089226723,
+        "vertical": 0.05830282345414162
+      }
+    },
+    {
+      "file": "images/01328_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "77785b90c496865505cb8274021eb23bfa642f476b6e5261d8627cc57b7468a8",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.8037729859352112,
+        "square": 0.453897088766098,
+        "circle": 0.6740703582763672,
+        "horizontal": 0.351774126291275,
+        "vertical": 0.34691885113716125
+      }
+    },
+    {
+      "file": "images/01333_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "50aa7e9b4540746c4416596b16ec2a47f258eec3cb61267d01569e8a95163424",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.6648314595222473,
+        "square": 0.5659741163253784,
+        "circle": 0.515650749206543,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01338_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "0b567c78844948bacf9bcfff3bc41538101f6fb0bac4655ee7ed04edb4ff6ead",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.5787011981010437,
+        "square": 0.495146244764328,
+        "circle": 0.4693835973739624,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01348_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "df93a94c02d45fd1827c390f7370856d18bb941bcb556a169f0127cc0d9b912f",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.6275711059570312,
+        "square": 0.5189582109451294,
+        "circle": 0.5156888961791992,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01353_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "f7d0db9f8f3cc9cb8c891230a944421e20ac6e22145068ed03dcc0e33e7c91ab",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.6575900316238403,
+        "square": 0.5435139536857605,
+        "circle": 0.5185356140136719,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01363_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "ffbbe945670ab4a216f37c31bfbd34695976d68f1eb232547474f84f8c279013",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.8351900577545166,
+        "square": 0.5143260955810547,
+        "circle": 0.7478117942810059,
+        "horizontal": 0.3581933081150055,
+        "vertical": 0.31860414147377014
+      }
+    },
+    {
+      "file": "images/01368_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "347b1ea33994ec9c935b899f2053814e4bc057e24dd6684fcc459fe2551dad0e",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.7272687554359436,
+        "square": 0.6092827916145325,
+        "circle": 0.6287946105003357,
+        "horizontal": 0.09770351648330688,
+        "vertical": 0.09324994683265686
+      }
+    },
+    {
+      "file": "images/01373_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "6219bb047d7efa9d413fdbc048289a71ad4d410ef305467496e83d3124ce0905",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.803635835647583,
+        "square": 0.4533917009830475,
+        "circle": 0.6742421388626099,
+        "horizontal": 0.35566648840904236,
+        "vertical": 0.3474498689174652
+      }
+    },
+    {
+      "file": "images/01383_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "5e7610837573f8945a20250b9679d04453920987dfa20a8d71fd0886271b6ef7",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.5602510571479797,
+        "square": 0.4751683175563812,
+        "circle": 0.4571959674358368,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01388_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "6664c4e411743a1b917e9248220bd05b923c88666a92686b8ed594e540d3ec2e",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.8402925729751587,
+        "square": 0.49618253111839294,
+        "circle": 0.7451333403587341,
+        "horizontal": 0.39011430740356445,
+        "vertical": 0.3508986234664917
+      }
+    },
+    {
+      "file": "images/01393_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "64db0e04e5ff02b9e7faf1b5d4f4859d586a8aaaea4e1c2c467035fff23572e0",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.8325276374816895,
+        "square": 0.500952959060669,
+        "circle": 0.7356869578361511,
+        "horizontal": 0.35438263416290283,
+        "vertical": 0.3435516357421875
+      }
+    },
+    {
+      "file": "images/01394_unknown.png",
+      "label": "unknown",
+      "profile": "scribble",
+      "sha256": "a6574e6cc6b40dd42f30bb88730b23eb9c23e5fc36954f0b3330d2ef50ddf833",
+      "parameters": {},
+      "predicted": "horizontal",
+      "scores": {
+        "cross": 0.535342276096344,
+        "square": 0.32216915488243103,
+        "circle": 0.33807870745658875,
+        "horizontal": 0.6567484736442566,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01408_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "35d1bbd5cd22a13cc51a8fff56b6401b78e8f08af8baafe0c1c4e1f9f489af3e",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.5533017516136169,
+        "square": 0.46745774149894714,
+        "circle": 0.4486028850078583,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01413_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "2f48485412833322b2e8b243ecf5763c5a8c01b08c3e6c121f73722dae46b39a",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.5696924328804016,
+        "square": 0.47657009959220886,
+        "circle": 0.4845271706581116,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01433_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "1868961d10c83f738c798319c057cfde1ba6e4d4f7d0db228ee39c40717fd774",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.7377262711524963,
+        "square": 0.5932043194770813,
+        "circle": 0.6233843564987183,
+        "horizontal": 0.11890871822834015,
+        "vertical": 0.10436080396175385
+      }
+    },
+    {
+      "file": "images/01453_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "bb6c259aee9156d4797b9296c450324e727234bd69d83c6daac69bb9275274e3",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.8248850107192993,
+        "square": 0.5311180353164673,
+        "circle": 0.741703450679779,
+        "horizontal": 0.3158554136753082,
+        "vertical": 0.2766397297382355
+      }
+    },
+    {
+      "file": "images/01458_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "bc4af8c5e8d742a758b3fdecf39dffae703050c54d263caf2243b4400b7273c8",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.7801094651222229,
+        "square": 0.5314337611198425,
+        "circle": 0.6990842223167419,
+        "horizontal": 0.27918699383735657,
+        "vertical": 0.24062518775463104
+      }
+    },
+    {
+      "file": "images/01463_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "5cbabd264d9e1bc46d89ccd043e0a3c7cfd03151c3e57710d540229dc296c6a9",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.7986220717430115,
+        "square": 0.42376548051834106,
+        "circle": 0.6526095271110535,
+        "horizontal": 0.38849788904190063,
+        "vertical": 0.3791608214378357
+      }
+    },
+    {
+      "file": "images/01473_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "7e597d2705462e2c54eab0e83c1e835544c4634744bee9711091cf960d0117fc",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.8292778730392456,
+        "square": 0.4698407053947449,
+        "circle": 0.7142610549926758,
+        "horizontal": 0.3828897476196289,
+        "vertical": 0.37504661083221436
+      }
+    },
+    {
+      "file": "images/01478_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "84facc0d02f967f0d2d8edce1230890a7fce6cbc7b0f302f2434a4d46e851685",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.5999538898468018,
+        "square": 0.49268507957458496,
+        "circle": 0.4840746223926544,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01488_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "4f67bdd6bf4443f6659b82c276ab8e2b24cb6b227b847ddbd529ec669bc0f9a2",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.6423067450523376,
+        "square": 0.5078889727592468,
+        "circle": 0.5169588327407837,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    },
+    {
+      "file": "images/01493_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "963ef5ffe1ca1168a51a1049c6dadd65376e2826635ee7dbaaaf079455d6e864",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.8392341732978821,
+        "square": 0.5066820383071899,
+        "circle": 0.7471137046813965,
+        "horizontal": 0.36118704080581665,
+        "vertical": 0.34811514616012573
+      }
+    },
+    {
+      "file": "images/01498_unknown.png",
+      "label": "unknown",
+      "profile": "blob",
+      "sha256": "0226f0fcf100636c57e3d279e5f67bee77175002e3fa06eecc4b11c2a87ec36f",
+      "parameters": {},
+      "predicted": "cross",
+      "scores": {
+        "cross": 0.6172032356262207,
+        "square": 0.4815690815448761,
+        "circle": 0.5088509917259216,
+        "horizontal": 0.0,
+        "vertical": 0.0
+      }
+    }
+  ],
+  "noise_sweep": [
+    {
+      "flipped_pixels": 0,
+      "fraction": 0.0,
+      "accuracy": 0.9733333333333334
+    },
+    {
+      "flipped_pixels": 3,
+      "fraction": 0.01171875,
+      "accuracy": 0.9366666666666666
+    },
+    {
+      "flipped_pixels": 8,
+      "fraction": 0.03125,
+      "accuracy": 0.54
+    },
+    {
+      "flipped_pixels": 13,
+      "fraction": 0.05078125,
+      "accuracy": 0.30666666666666664
+    },
+    {
+      "flipped_pixels": 26,
+      "fraction": 0.1015625,
+      "accuracy": 0.043333333333333335
+    }
+  ]
+}
